@@ -1,4 +1,4 @@
 <div>
-  <input></input>
-  <button></button>
+  <input [(ngModel)]="todosService.name"/>
+  <button (click)="todosService.addTodo()">ADD</button>
 </div>

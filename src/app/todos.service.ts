@@ -3,10 +3,11 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class TodosService {
 
-  todos = ['work', 'computer'];
+  todos = [];
+  name = '';
 
-  addTodo(name) {
-    this.todos.push(name);
+  addTodo() {
+    this.todos.push(this.name);
   }
 
   constructor() { }
