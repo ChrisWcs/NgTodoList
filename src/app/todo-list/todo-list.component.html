@@ -1,6 +1,6 @@
 <div>
   <ul>
-    <li *ngFor="let todo of todosService.todos">
+    <li *ngFor="let todo of todosService.todos; let i = index" (click)="todosService.removeTodo(i)" >
       {{ todo }}
     </li>
   </ul>
