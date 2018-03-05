@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { MatListModule } from '@angular/material';
+import { MatListModule, MatButtonModule, MatInputModule, MatFormFieldModule } from '@angular/material';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -20,6 +20,9 @@ import { TodoInputComponent } from './todo-input/todo-input.component';
     FormsModule,
     BrowserModule,
     MatListModule,
+    MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule,
   ],
   providers: [TodosService],
   bootstrap: [AppComponent]

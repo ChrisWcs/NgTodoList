@@ -1,4 +1,8 @@
 <div>
-  <input [(ngModel)]="todosService.name"/>
-  <button (click)="todosService.addTodo()">ADD</button>
+  <form>
+    <mat-form-field>
+        <input matInput name="first" [(ngModel)]="todosService.name"/>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="todosService.addTodo()">ADD</button>
 </div>
